@@ -13,7 +13,7 @@
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-NBND3S2D.js"></script>
-    <script src="dist/sidebar_items-76FA772C.js"></script>
+    <script src="dist/sidebar_items-1B0C8384.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -142,7 +142,23 @@ Plausible
 
     <div class="summary-row">
       <div class="summary-signature">
+        <a href="#cancel_email_changeset/1" translate="no">cancel_email_changeset(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
         <a href="#changeset/2" translate="no">changeset(user, attrs \\ %{})</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#email_changeset/2" translate="no">email_changeset(user, attrs \\ %{})</a>
 
       </div>
 
@@ -174,6 +190,22 @@ Plausible
 
     <div class="summary-row">
       <div class="summary-signature">
+        <a href="#password_strength/1" translate="no">password_strength(changeset)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#profile_img_url/1" translate="no">profile_img_url(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
         <a href="#remove_trial_expiry/1" translate="no">remove_trial_expiry(user)</a>
 
       </div>
@@ -183,6 +215,14 @@ Plausible
     <div class="summary-row">
       <div class="summary-signature">
         <a href="#set_password/2" translate="no">set_password(user, password)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_changeset/2" translate="no">settings_changeset(user, attrs \\ %{})</a>
 
       </div>
 
@@ -245,10 +285,14 @@ Types
   password: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   password_confirmation: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   password_hash: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  previous_email: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   site_memberships: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   sites: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   subscription: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   theme: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  totp_enabled: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  totp_last_used_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  totp_secret: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   trial_expiry_date: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   updated_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
 }</pre>
@@ -270,6 +314,28 @@ Functions
       </a>
     </h1>
     <div class="functions-list">
+<section class="detail" id="cancel_email_changeset/1">
+
+  <div class="detail-header">
+    <a href="#cancel_email_changeset/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">cancel_email_changeset(user)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L82" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="changeset/2">
 
     <span id="changeset/1"></span>
@@ -281,7 +347,31 @@ Functions
     </a>
     <h1 class="signature" translate="no">changeset(user, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L55" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L96" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="email_changeset/2">
+
+    <span id="email_changeset/1"></span>
+
+  <div class="detail-header">
+    <a href="#email_changeset/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">email_changeset(user, attrs \\ %{})</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L71" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -303,7 +393,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">end_trial(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L87" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L128" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -325,7 +415,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">hash_password(changeset)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L72" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L113" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -349,7 +439,51 @@ Functions
     </a>
     <h1 class="signature" translate="no">new(attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L42" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L50" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="password_strength/1">
+
+  <div class="detail-header">
+    <a href="#password_strength/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">password_strength(changeset)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L132" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="profile_img_url/1">
+
+  <div class="detail-header">
+    <a href="#profile_img_url/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">profile_img_url(user)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L162" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -371,7 +505,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">remove_trial_expiry(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L79" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L120" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -393,7 +527,31 @@ Functions
     </a>
     <h1 class="signature" translate="no">set_password(user, password)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L62" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L103" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="settings_changeset/2">
+
+    <span id="settings_changeset/1"></span>
+
+  <div class="detail-header">
+    <a href="#settings_changeset/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">settings_changeset(user, attrs \\ %{})</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L64" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -415,7 +573,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">start_trial(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L83" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/user.ex#L124" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>

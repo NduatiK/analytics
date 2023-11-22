@@ -13,7 +13,7 @@
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-NBND3S2D.js"></script>
-    <script src="dist/sidebar_items-76FA772C.js"></script>
+    <script src="dist/sidebar_items-1B0C8384.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -134,8 +134,7 @@ Plausible
 
   </div>
 
-    <div class="summary-synopsis"><p>Plausible keeps the contexts that define your domain
-and business logic.</p></div>
+    <div class="summary-synopsis"><p>Build-related macros</p></div>
 
 </div>
 <div class="summary-row">
@@ -170,6 +169,24 @@ and business logic.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Auth.EmailActivationCode.html" translate="no">Plausible.Auth.EmailActivationCode</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Schema for email activation codes.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Auth.EmailVerification.html" translate="no">Plausible.Auth.EmailVerification</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>API for verifying emails.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Auth.GracePeriod.html" translate="no">Plausible.Auth.GracePeriod</a>
 
   </div>
@@ -190,6 +207,42 @@ period.</p></div>
     <a href="Plausible.Auth.Password.html" translate="no">Plausible.Auth.Password</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Auth.TOTP.html" translate="no">Plausible.Auth.TOTP</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>TOTP auth context</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Auth.TOTP.EncryptedBinary.html" translate="no">Plausible.Auth.TOTP.EncryptedBinary</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Defines an Ecto type so Cloak.Ecto can encrypt/decrypt a binary field.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Auth.TOTP.RecoveryCode.html" translate="no">Plausible.Auth.TOTP.RecoveryCode</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Schema for TOTP recovery codes.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Auth.TOTP.Vault.html" translate="no">Plausible.Auth.TOTP.Vault</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Provides a vault that will be used to encrypt/decrypt the TOTP secrets of users who enable it.</p></div>
 
 </div>
 <div class="summary-row">
@@ -222,6 +275,39 @@ period.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Billing.Ecto.Feature.html" translate="no">Plausible.Billing.Ecto.Feature</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Ecto type representing a feature. Features are cast and stored in the
+database as strings and loaded as modules, for example: <code class="inline">&quot;props&quot;</code> is loaded
+as <code class="inline">Plausible.Billing.Feature.Props</code>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Billing.Ecto.FeatureList.html" translate="no">Plausible.Billing.Ecto.FeatureList</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Ecto type representing a list of features. This is a proxy for 
+<code class="inline">{:array, Plausible.Billing.Ecto.Feature}</code> and is required for Kaffy to
+render the HTML input correctly.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Billing.Ecto.Limit.html" translate="no">Plausible.Billing.Ecto.Limit</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Ecto type representing a limit, that can be either a number or unlimited.
+Unlimited is dumped to the database as <code class="inline">-1</code> and loaded as <code class="inline">:unlimited</code> to
+keep compatibility with the rest of the codebase.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Billing.EnterprisePlan.html" translate="no">Plausible.Billing.EnterprisePlan</a>
 
   </div>
@@ -232,6 +318,16 @@ period.</p></div>
     <a href="Plausible.Billing.EnterprisePlanAdmin.html" translate="no">Plausible.Billing.EnterprisePlanAdmin</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Billing.Feature.html" translate="no">Plausible.Billing.Feature</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module provides an interface for managing features, e.g. Revenue Goals,
+Funnels and Custom Properties.</p></div>
 
 </div>
 <div class="summary-row">
@@ -250,9 +346,29 @@ period.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Billing.Quota.html" translate="no">Plausible.Billing.Quota</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module provides functions to work with plans usage and limits.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Billing.SiteLocker.html" translate="no">Plausible.Billing.SiteLocker</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Billing.Subscription.Status.html" translate="no">Plausible.Billing.Subscription.Status</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The subscription statuses are stored in Paddle. They can only be changed
+through Paddle webhooks, which always send the current subscription status
+via the payload.</p></div>
 
 </div>
 <div class="summary-row">
@@ -531,6 +647,15 @@ A funnel consists of several steps (here: 2..8).</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Funnel.Const.html" translate="no">Plausible.Funnel.Const</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Compile-time convience constants for funnel characteristics.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Funnel.Step.html" translate="no">Plausible.Funnel.Step</a>
 
   </div>
@@ -563,6 +688,15 @@ creating and deleting funnel definitions.</p></div>
     <a href="Plausible.Goal.html" translate="no">Plausible.Goal</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Goal.Revenue.html" translate="no">Plausible.Goal.Revenue</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Currency specific functions for revenue goals</p></div>
 
 </div>
 <div class="summary-row">
@@ -632,6 +766,15 @@ maximum size, defined by <code class="inline">max_buffer_size/0</code>.</p></div
     <a href="Plausible.HTTPClient.Non200Error.html" translate="no">Plausible.HTTPClient.Non200Error</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Helpers.JSON.html" translate="no">Plausible.Helpers.JSON</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Common helpers for JSON handling</p></div>
 
 </div>
 <div class="summary-row">
@@ -716,6 +859,15 @@ are uniformly either buffered in batches (to Clickhouse) or dropped
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Ingestion.Event.Revenue.html" translate="no">Plausible.Ingestion.Event.Revenue</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Revenue specific functions for the ingestion scope</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Ingestion.Request.html" translate="no">Plausible.Ingestion.Request</a>
 
   </div>
@@ -723,6 +875,15 @@ are uniformly either buffered in batches (to Clickhouse) or dropped
     <div class="summary-synopsis"><p>The %Plausible.Ingestion.Request{} struct stores all needed fields
 to create an event downstream. Pre-eliminary validation is made
 to detect user errors early.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Ingestion.Request.Revenue.html" translate="no">Plausible.Ingestion.Request.Revenue</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Revenue specific functions for the ingestion scope</p></div>
 
 </div>
 <div class="summary-row">
@@ -748,6 +909,55 @@ HTTP requests and queries to Oban tables are ignored, for example.</p></div>
     <a href="Plausible.PaddleApi.Mock.html" translate="no">Plausible.PaddleApi.Mock</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Pagination.html" translate="no">Plausible.Pagination</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Cursor-based pagination.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Plugins.API.Goals.html" translate="no">Plausible.Plugins.API.Goals</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Plugins API context module for Goals.
+All high level Goal operations should be implemented here.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Plugins.API.SharedLinks.html" translate="no">Plausible.Plugins.API.SharedLinks</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Plugins API context module for Shared Links.
+All high level Shared Links operations should be implemented here.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Plugins.API.Token.html" translate="no">Plausible.Plugins.API.Token</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Ecto schema for Plugins API Tokens.
+Tokens are stored hashed and require a description.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Plugins.API.Tokens.html" translate="no">Plausible.Plugins.API.Tokens</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Context module for Plugins API Tokens.
+Exposes high-level operation for token-based authentication flows.</p></div>
 
 </div>
 <div class="summary-row">
@@ -938,6 +1148,52 @@ with one of the following policy markers</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Site.Memberships.html" translate="no">Plausible.Site.Memberships</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>API for site memberships and invitations</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.Memberships.AcceptInvitation.html" translate="no">Plausible.Site.Memberships.AcceptInvitation</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Service for accepting invitations, including ownership transfers.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.Memberships.CreateInvitation.html" translate="no">Plausible.Site.Memberships.CreateInvitation</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Service for inviting new or existing users to a sites, including ownershhip
+transfers.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.Memberships.RejectInvitation.html" translate="no">Plausible.Site.Memberships.RejectInvitation</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Service for rejecting invitations.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.Memberships.RemoveInvitation.html" translate="no">Plausible.Site.Memberships.RemoveInvitation</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Service for removing invitations.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Site.MonthlyReport.html" translate="no">Plausible.Site.MonthlyReport</a>
 
   </div>
@@ -968,6 +1224,15 @@ with one of the following policy markers</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Site.UserPreference.html" translate="no">Plausible.Site.UserPreference</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>User-specific site preferences schema</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Site.WeeklyReport.html" translate="no">Plausible.Site.WeeklyReport</a>
 
   </div>
@@ -985,6 +1250,8 @@ with one of the following policy markers</p></div>
     <a href="Plausible.Sites.html" translate="no">Plausible.Sites</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>Sites context functions.</p></div>
 
 </div>
 <div class="summary-row">
@@ -1096,6 +1363,15 @@ ClickHouse funnel query based on <a href="Plausible.Funnel.html"><code class="in
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Stats.Goal.Revenue.html" translate="no">Plausible.Stats.Goal.Revenue</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Revenue specific functions for the stats scope</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Stats.Imported.html" translate="no">Plausible.Stats.Imported</a>
 
   </div>
@@ -1151,6 +1427,17 @@ ClickHouse funnel query based on <a href="Plausible.Funnel.html"><code class="in
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Test.Support.HTTPMocker.html" translate="no">Plausible.Test.Support.HTTPMocker</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Currently only supports post request, it's a drop-in replacement
+for our exvcr usage that wasn't ever needed (e.g. we had no way to
+re-record the cassettes anyway).</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.TestUtils.html" translate="no">Plausible.TestUtils</a>
 
   </div>
@@ -1182,13 +1469,6 @@ ClickHouse funnel query based on <a href="Plausible.Funnel.html"><code class="in
 <div class="summary-row">
   <div class="summary-signature">
     <a href="Plausible.Workers.CheckUsage.html" translate="no">Plausible.Workers.CheckUsage</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="Plausible.Workers.CleanEmailVerificationCodes.html" translate="no">Plausible.Workers.CleanEmailVerificationCodes</a>
 
   </div>
 
@@ -1381,6 +1661,15 @@ before redeploying their scripts and integrations.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="PlausibleWeb.AvatarController.html" translate="no">PlausibleWeb.AvatarController</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module proxies requests to BASE_URL/avatar/:hash to www.gravatar.com/avatar/:hash.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="PlausibleWeb.BillingController.html" translate="no">PlausibleWeb.BillingController</a>
 
   </div>
@@ -1418,6 +1707,24 @@ before redeploying their scripts and integrations.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="PlausibleWeb.Components.Google.html" translate="no">PlausibleWeb.Components.Google</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Google-related components</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Components.Settings.html" translate="no">PlausibleWeb.Components.Settings</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>An umbrella module for the Integrations settings section</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="PlausibleWeb.Components.Site.Feature.html" translate="no">PlausibleWeb.Components.Site.Feature</a>
 
   </div>
@@ -1441,6 +1748,15 @@ tests that require setting up a connection.</p></div>
     <a href="PlausibleWeb.ControllerHelpers.html" translate="no">PlausibleWeb.ControllerHelpers</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Controllers.API.Revenue.html" translate="no">PlausibleWeb.Controllers.API.Revenue</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Revenue specific functions for the API scope</p></div>
 
 </div>
 <div class="summary-row">
@@ -1534,6 +1850,22 @@ to the Plausible frontend.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="PlausibleWeb.LayoutView.JWT.html" translate="no">PlausibleWeb.LayoutView.JWT</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.ChoosePlan.html" translate="no">PlausibleWeb.Live.ChoosePlan</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>LiveView for upgrading to a plan, or changing an existing plan.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="PlausibleWeb.Live.Components.ComboBox.html" translate="no">PlausibleWeb.Live.Components.ComboBox</a>
 
   </div>
@@ -1549,6 +1881,33 @@ functionality.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>Default suggestion engine for the <code class="inline">ComboBox</code> component.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.Components.Form.html" translate="no">PlausibleWeb.Live.Components.Form</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Generic components stolen from mix phx.new templates</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.Components.Pagination.html" translate="no">PlausibleWeb.Live.Components.Pagination</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Pagination components for LiveViews.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.Components.Visitors.html" translate="no">PlausibleWeb.Live.Components.Visitors</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Component rendering mini-graph of site's visitors over the last 24 hours.</p></div>
 
 </div>
 <div class="summary-row">
@@ -1592,11 +1951,101 @@ and the number of steps they have.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="PlausibleWeb.Live.GoalSettings.html" translate="no">PlausibleWeb.Live.GoalSettings</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>LiveView allowing listing, creating and deleting goals.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.GoalSettings.Form.html" translate="no">PlausibleWeb.Live.GoalSettings.Form</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Live view for the goal creation form</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.GoalSettings.List.html" translate="no">PlausibleWeb.Live.GoalSettings.List</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Phoenix LiveComponent module that renders a list of goals</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.Plugins.API.Settings.html" translate="no">PlausibleWeb.Live.Plugins.API.Settings</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>LiveView allowing listing, creating and revoking Plugins API tokens.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.Plugins.API.TokenForm.html" translate="no">PlausibleWeb.Live.Plugins.API.TokenForm</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Live view for the goal creation form</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="PlausibleWeb.Live.PropsSettings.html" translate="no">PlausibleWeb.Live.PropsSettings</a>
 
   </div>
 
     <div class="summary-synopsis"><p>LiveView allowing listing, allowing and disallowing custom event properties.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.PropsSettings.Form.html" translate="no">PlausibleWeb.Live.PropsSettings.Form</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Live view for the custom props creation form</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.PropsSettings.List.html" translate="no">PlausibleWeb.Live.PropsSettings.List</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Phoenix LiveComponent module that renders a list of custom properties</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.RegisterForm.html" translate="no">PlausibleWeb.Live.RegisterForm</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>LiveView for registration form.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.ResetPasswordForm.html" translate="no">PlausibleWeb.Live.ResetPasswordForm</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>LiveView for password reset form.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.Sites.html" translate="no">PlausibleWeb.Live.Sites</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>LiveView for sites index.</p></div>
 
 </div>
 <div class="summary-row">
@@ -1624,22 +2073,309 @@ and the number of steps they have.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.html" translate="no">PlausibleWeb.Plugins.API</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Plausible Plugins API</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Controllers.Goals.html" translate="no">PlausibleWeb.Plugins.API.Controllers.Goals</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Controller for the Goal resource under Plugins API</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Controllers.SharedLinks.html" translate="no">PlausibleWeb.Plugins.API.Controllers.SharedLinks</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Controller for the Shared Link resource under Plugins API</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Errors.html" translate="no">PlausibleWeb.Plugins.API.Errors</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Common responses for Plugins API</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Router.html" translate="no">PlausibleWeb.Plugins.API.Router</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Error.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Error</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for an error included in a response</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Goal</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Goal creation request</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.CustomEvent.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.CustomEvent</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Custom Event Goal creation request</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.Pageview.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.Pageview</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Pageview Goal creation request</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.Revenue.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.Revenue</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Custom Event Goal creation request</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.CustomEvent.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.CustomEvent</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Custom Event Goal object</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.ListResponse.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.ListResponse</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Goals list response</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.Pageview.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.Pageview</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Pageview Goal object</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.Revenue.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.Revenue</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for Revenue Goal object</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Goal.Type.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Goal.Type</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for common Goal Type</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Link.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Link</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI Link schema</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.NotFound.html" translate="no">PlausibleWeb.Plugins.API.Schemas.NotFound</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for a generic 404 response</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.PaginationMetadata.html" translate="no">PlausibleWeb.Plugins.API.Schemas.PaginationMetadata</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Pagination metadata OpenAPI schema</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.PaymentRequired.html" translate="no">PlausibleWeb.Plugins.API.Schemas.PaymentRequired</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for a generic 402 response</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.SharedLink.html" translate="no">PlausibleWeb.Plugins.API.Schemas.SharedLink</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for SharedLink object</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.SharedLink.CreateRequest.html" translate="no">PlausibleWeb.Plugins.API.Schemas.SharedLink.CreateRequest</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for SharedLink creation request</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.SharedLink.ListResponse.html" translate="no">PlausibleWeb.Plugins.API.Schemas.SharedLink.ListResponse</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for SharedLink list response</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.Unauthorized.html" translate="no">PlausibleWeb.Plugins.API.Schemas.Unauthorized</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for a generic 401 response</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Schemas.UnprocessableEntity.html" translate="no">PlausibleWeb.Plugins.API.Schemas.UnprocessableEntity</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI schema for a generic 422 response</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Spec.html" translate="no">PlausibleWeb.Plugins.API.Spec</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>OpenAPI specification for the Plugins API</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Views.Error.html" translate="no">PlausibleWeb.Plugins.API.Views.Error</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>View for rendering Plugins REST API errors</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Views.Goal.html" translate="no">PlausibleWeb.Plugins.API.Views.Goal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>View for rendering Goals in the Plugins API</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Views.Pagination.html" translate="no">PlausibleWeb.Plugins.API.Views.Pagination</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A view capable of rendering pagination metadata included
+in responses containing lists of objects.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugins.API.Views.SharedLink.html" translate="no">PlausibleWeb.Plugins.API.Views.SharedLink</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>View for rendering Shared Links in the Plugins API</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.PluginsAPICase.html" translate="no">PlausibleWeb.PluginsAPICase</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module defines the test case to be used by
+tests that require setting up a Plugins API connection.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugs.AuthorizePluginsAPI.html" translate="no">PlausibleWeb.Plugs.AuthorizePluginsAPI</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Plug for Basic HTTP Authentication using
+Plugins API Tokens lookup.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Plugs.MaybeDisableRegistration.html" translate="no">PlausibleWeb.Plugs.MaybeDisableRegistration</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Plug toggling registration according to selfhosted state.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="PlausibleWeb.Plugs.NoRobots.html" translate="no">PlausibleWeb.Plugs.NoRobots</a>
 
   </div>
 
     <div class="summary-synopsis"><p>Rejects bot requests by any means available.</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="PlausibleWeb.Plugs.RuntimeSessionAdapter.html" translate="no">PlausibleWeb.Plugs.RuntimeSessionAdapter</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>A <a href="https://hexdocs.pm/plug/1.14.2/Plug.Session.html"><code class="inline">Plug.Session</code></a> adapter that allows configuration at runtime.
-Sadly, the plug being wrapped has no MFA option for dynamic
-configuration.</p></div>
 
 </div>
 <div class="summary-row">
@@ -1765,6 +2501,18 @@ configuration.</p></div>
 </h2>
 
     <div class="summary">
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mix.Tasks.CancelSubscription.html" translate="no">mix cancel_subscription</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This task is meant to replicate the behavior of cancelling
+a subscription. On production, this action is initiated by
+a Paddle webhook. Currently, only the subscription status
+is changed with that action.</p></div>
+
+</div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="Mix.Tasks.CleanClickhouse.html" translate="no">mix clean_clickhouse</a>
